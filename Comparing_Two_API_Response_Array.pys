@@ -1,0 +1,13 @@
+expected = [10, 12, 14, 15, 16, 28]
+actual = [13, 14, 16, 17]
+matched = []
+count = 0
+for i in expected:
+    for j in actual:
+        if i == j:
+            count += 1
+            matched.append(i)
+
+print("Number of matching elements:", count)
+
+print(matched)
